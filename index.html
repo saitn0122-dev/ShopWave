@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopWave — Главная</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"></header>
+
+<main>
+  <section class="hero">
+    <div class="hero-content">
+      <p class="eyebrow">Онлайн-магазин нового поколения</p>
+      <h1>Стильные товары<br>на каждый день</h1>
+      <p>Выбирайте лучшее для себя и своих близких</p>
+      <a href="#catalog" class="btn btn-light">Перейти в каталог</a>
+    </div>
+    <div class="hero-art">
+      <div class="plant"></div>
+      <div class="bag-hero"></div>
+    </div>
+  </section>
+
+  <section class="catalog-section" id="catalog">
+    <div class="section-head">
+      <div>
+        <p class="eyebrow dark">Каталог</p>
+        <h2>Популярные товары</h2>
+      </div>
+      <div class="filters">
+        <input id="searchInput" type="search" placeholder="Поиск товаров...">
+        <select id="categoryFilter">
+          <option value="all">Все категории</option>
+        </select>
+        <select id="sortSelect">
+          <option value="default">Без сортировки</option>
+          <option value="price-asc">Цена ↑</option>
+          <option value="price-desc">Цена ↓</option>
+          <option value="title-asc">По алфавиту</option>
+        </select>
+      </div>
+    </div>
+
+    <div id="productsGrid" class="products-grid"></div>
+    <p id="statusText" class="status-text">Загрузка товаров...</p>
+  </section>
+</main>
+
+<footer class="footer">
+  <div>
+    <img src="assets/logo-icon.png" alt="ShopWave">
+    <strong>ShopWave</strong>
+  </div>
+  <p>Контакты продавца: +7 700 278 43 22 · shopwave@mail.kz · г. Алматы, ул. Абая 25</p>
+</footer>
+
+<a href="cart.html" class="floating-cart" title="Корзина">
+  🛒
+  <span class="cart-count floating-count">0</span>
+</a>
+
+<script type="module" src="js/app.js"></script>
+</body>
+</html>

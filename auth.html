@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ShopWave — Вход / Регистрация</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<header class="site-header"></header>
+
+<main class="auth-page">
+  <section class="auth-card">
+    <div class="tabs">
+      <button class="tab active" data-tab="login">Вход</button>
+      <button class="tab" data-tab="register">Регистрация</button>
+    </div>
+
+    <form id="loginForm" class="auth-form">
+      <h1>Вход</h1>
+      <label>Email
+        <input type="email" name="email" placeholder="Введите email" required>
+      </label>
+      <label>Пароль
+        <input type="password" name="password" placeholder="Введите пароль" minlength="6" required>
+      </label>
+      <button class="btn btn-primary" type="submit">Войти</button>
+      <p class="form-message" id="loginMessage"></p>
+    </form>
+
+    <form id="registerForm" class="auth-form hidden">
+      <h1>Регистрация</h1>
+      <label>Имя
+        <input type="text" name="name" placeholder="Введите ваше имя" minlength="2" required>
+      </label>
+      <label>Email
+        <input type="email" name="email" placeholder="Введите email" required>
+      </label>
+      <label>Пароль
+        <input type="password" name="password" placeholder="Введите пароль" minlength="6" required>
+      </label>
+      <label>Подтвердите пароль
+        <input type="password" name="confirmPassword" placeholder="Повторите пароль" minlength="6" required>
+      </label>
+      <button class="btn btn-primary" type="submit">Зарегистрироваться</button>
+      <p class="form-message" id="registerMessage"></p>
+    </form>
+  </section>
+
+  <aside class="auth-art">
+    <img src="assets/auth-lock.png" alt="Защита аккаунта">
+  </aside>
+</main>
+
+<footer class="footer">
+  <div><img src="assets/logo-icon.png" alt="ShopWave"><strong>ShopWave</strong></div>
+  <p>Контакты продавца: +7 700 278 43 22 · shopwave@mail.kz · г. Алматы, ул. Абая 25</p>
+</footer>
+
+<a href="cart.html" class="floating-cart" title="Корзина">🛒<span class="cart-count floating-count">0</span></a>
+
+<script type="module" src="js/auth.js"></script>
+</body>
+</html>
